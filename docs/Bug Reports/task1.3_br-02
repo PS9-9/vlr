@@ -1,0 +1,46 @@
+# BUG-[01] · [One-line title]
+
+| Field                | Value |
+|----------------------|-------|
+| **Severity**         | Critical / High / Medium / Low |
+| **Priority**         | P1 / P2 / P3 / P4 |
+| **Status**           | New |
+| **Type**             | Functional / Visual / Security / Performance / Content |
+| **Regulatory**       | FSCA / POPIA / PCI DSS / KYC / None |
+| **Fin. exposure**    | e.g. ~2 000 users · est. R500k at risk / Not applicable |
+| **Security class**   | Public / Internal only / Security-sensitive |
+| **Reported by**      | Name |
+| **Date**             | YYYY-MM-DD |
+| **Assigned to**      | Dev name |
+| **Build / env**      | Production / Staging / commit SHA |
+
+
+## Summary
+
+
+## Steps to reproduce
+
+
+## Expected result
+
+
+## Actual result
+
+
+## Environment (browser · OS · device · network · screen size)
+
+
+## Reproducibility (always / often / sometimes / once)
+
+
+## Impact (user count · conversion · regulatory)
+
+## Evidence (links to recordings, screenshots, logs)
+
+
+## Root cause (if known)
+
+
+
+
+## Resolution (filled in when fixed — what changed, build deployed, verified by)

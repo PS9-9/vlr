@@ -1,0 +1,52 @@
+# BR-[01] · Contact Information Verification for Business Registration
+
+| Field                | Value            |
+|----------------------|------------------|
+| **Severity**         | Medium           |
+| **Priority**         | P2               |
+| **Status**           | New              |
+| **Type**             | Functional       |
+| **Regulatory**       | POPIA /KYC       |
+| **Fin. exposure**    | Not applicable   |
+| **Security class**   | Public           |
+| **Reported by**      | Sello Matlawa.   |
+|.  **Date**           | 2026-04-29  |
+| **Build / env**      | Production |
+
+
+## Summary
+Test the Business registration journey ensuring that information is captured correctly and is verifiable
+
+
+## Steps to reproduce
+1. Go to https://www.valr.com/en/signup
+2. Enter business information
+3. Submit 
+
+## Expected result
+- Verification steps expected on the cellphone and email before submission
+
+## Actual result
+- Incorrect email and cellphone numbers are submitted without verification
+
+## Environment (browser · OS · device · network · screen size)
+Edge Browser, Macbook 2012 Intel
+
+## Reproducibility (always / often / sometimes / once)
+
+
+## Impact (user count · conversion · regulatory)
+Incorrectly captured contact information will create issues in the numebr of users and the ability to convert business users
+
+## Evidence (links to recordings, screenshots, logs)
+vlr/docs/Bug Reports/evidence/businessRegistration/testData.png
+vlr/docs/Bug Reports/evidence/businessRegistration/businessRegFormValidation.png
+vlr/docs/Bug Reports/evidence/businessRegistration/businessRegFormValidation.png
+
+## Root cause (if known)
+
+NA
+
+
+## Resolution (filled in when fixed — what changed, build deployed, verified by)
+Verify contact information before submission via OTP
