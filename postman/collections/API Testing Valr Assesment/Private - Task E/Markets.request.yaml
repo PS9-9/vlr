@@ -1,9 +1,17 @@
 $kind: http-request
 name: Markets
-url: "{{baseUrl}}{{market}}"
+url: "{{baseUrl}}{{market}}?X-VALR-API-KEY={{api-key}}&X-VALR-SIGNATURE={{signature}}&X-VALR-TIMESTAMP={{$timestamp}}"
 method: GET
 headers:
   X-VALR-API-KEY: ""
   X-VALR-SIGNATURE: ""
   X-VALR-TIMESTAMP: ""
+queryParams:
+  - key: X-VALR-API-KEY
+    value: "{{api-key}}"
+  - key: X-VALR-SIGNATURE
+    value: "{{signature}}"
+  - key: X-VALR-TIMESTAMP
+    value: "{{$timestamp}}"
+examples: .resources/Markets.resources/examples
 order: 348959516771264

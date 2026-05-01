@@ -2,6 +2,13 @@
 
 This repository contains a QA assessment for VALR, focused on validating the public site, trading workflows, API behavior, and business registration.
 
+## Tools Used
+
+- Postman API Testing
+- Github for source control and sharing
+- Copilot for Repo Support and Documentation
+- Claude AI for Research and Context
+
 ## Testing scope
 
 - Exploratory testing for landing page usability and business registration flows
@@ -22,20 +29,19 @@ This repository contains a QA assessment for VALR, focused on validating the pub
 
 ### API tests
 - **Authentication boundary:** Verified unauthorized access returns 401, malformed authentication returns 401, invalid HTTP methods return errors, and error responses do not expose sensitive data.
-- **Public endpoints:** Validated currency listing, market summary, order book, trading pairs, and trade history endpoints.
+- **Public endpoints:** Validated currency listing, market summary, order book, trading pairs, and trade history endpoints. Findings documented in [docs/api-testing/api-testing.md](docs/api-testing/api-testing.md).
 
 ### Bug reporting
 - Documented a business registration issue where contact information is accepted without OTP verification.
 - Captured evidence in `docs/bug-report/evidence/businessRegistration/`.
 - Provided a structured report with severity, impact, and reproducibility details.
 
-## Tester observations
+## Observations
 
-- The repository is well organized for a combined exploratory and scripted testing approach.
-- There is a meaningful split between UI, API, and bug reporting artifacts.
 - A critical gap exists in business registration verification, which should be addressed for KYC/compliance reasons.
 
-## Notes
-
-- The root repository tracks a nested `vlr` repo, which contains the actual test cases and bug reports.
-- This README summarizes the testing work from a tester's perspective and serves as an introduction for future QA review.
+## Items not completed/ could have been tested
+- Creation of a script for the X-VALR-SIGNATURE
+- More Aggressive negative testing
+- Exploration of more links on the public website
+- Adding automation

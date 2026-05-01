@@ -1,5 +1,12 @@
 $kind: http-request
 name: BTC/ZAR
-url: "{{baseUrl}}{{btczar}}"
+url: "{{baseUrl}}{{btczar}}?X-VALR-API-KEY={{api-key}}&X-VALR-SIGNATURE={{signature}}&X-VALR-TIMESTAMP={{timestamp}}"
 method: GET
+queryParams:
+  - key: X-VALR-API-KEY
+    value: "{{api-key}}"
+  - key: X-VALR-SIGNATURE
+    value: "{{signature}}"
+  - key: X-VALR-TIMESTAMP
+    value: "{{timestamp}}"
 order: 3916172954332436

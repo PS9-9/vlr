@@ -26,5 +26,11 @@ values:
     value: ''
   - key: public
     value: ''
-  - key: apiKey
+  - key: api-key
+    value: ''
+  - key: api-secret
+    value: ''
+  - key: signature
+    value: ''
+  - key: timestamp
     value: ''

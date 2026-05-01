@@ -1,0 +1,34 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}{{market}}"
+  method: GET
+  headers:
+    X-VALR-API-KEY: ""
+    X-VALR-SIGNATURE: ""
+    X-VALR-TIMESTAMP: ""
+response:
+  statusCode: 401
+  statusText: Unauthorized
+  headers:
+    date: Fri, 01 May 2026 19:44:13 GMT
+    x-xss-protection: 1; mode=block
+    x-content-type-options: nosniff
+    x-frame-options: Deny
+    content-security-policy: default-src 'none'
+    content-type: application/json
+    x-valr-upstream-service-time: "0"
+    strict-transport-security: max-age=15552000; includeSubDomains; preload
+    content-encoding: gzip
+    vary: Accept-Encoding
+    server: n/a
+    via: 1.1 google
+    alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    transfer-encoding: chunked
+  body:
+    type: json
+    content: |-
+      {
+        "code": -11264,
+        "message": "API key or secret is invalid"
+      }
+order: 1777664656248

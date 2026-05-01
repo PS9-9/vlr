@@ -1,9 +1,16 @@
 $kind: http-request
 name: Open
-url: "{{baseUrl}}{{open}}"
+url: "{{baseUrl}}{{open}}?X-VALR-API-KEY={{api-key}}&X-VALR-SIGNATURE={{signature}}&X-VALR-TIMESTAMP={{$timestamp}}"
 method: GET
 headers:
   X-VALR-TIMESTAMP: ""
   X-VALR-API-KEY: ""
   X-VALR-SIGNATURE: ""
+queryParams:
+  - key: X-VALR-API-KEY
+    value: "{{api-key}}"
+  - key: X-VALR-SIGNATURE
+    value: "{{signature}}"
+  - key: X-VALR-TIMESTAMP
+    value: "{{$timestamp}}"
 order: 2606183135664441
