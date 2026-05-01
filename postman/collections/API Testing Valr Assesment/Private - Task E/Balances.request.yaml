@@ -1,5 +1,5 @@
 $kind: http-request
-name: Balances
 url: ""
 method: GET
+examples: .resources/Balances.resources/examples
 order: 1777641416745

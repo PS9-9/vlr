@@ -1,0 +1,52 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}{{balances}}"
+  method: GET
+  headers:
+    - key: X-VALR-API-KEY
+      value: e62d52a736b8fc24f19705d130bb59b40472b7765681d75a731e91b093ba4d8d
+    - key: X-VALR-SIGNATURE
+      value: HMAC-SHA512
+    - key: X-VALR-TIMESTAMP
+      value: ""
+response:
+  statusCode: 401
+  statusText: Unauthorized
+  headers:
+    - key: date
+      value: Fri, 01 May 2026 18:55:51 GMT
+    - key: x-xss-protection
+      value: 1; mode=block
+    - key: x-content-type-options
+      value: nosniff
+    - key: x-frame-options
+      value: Deny
+    - key: content-security-policy
+      value: default-src 'none'
+    - key: content-type
+      value: application/json
+    - key: x-valr-upstream-service-time
+      value: "0"
+    - key: strict-transport-security
+      value: max-age=15552000; includeSubDomains; preload
+    - key: content-encoding
+      value: gzip
+    - key: vary
+      value: Accept-Encoding
+    - key: server
+      value: n/a
+    - key: via
+      value: 1.1 google
+    - key: alt-svc
+      value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    - key: transfer-encoding
+      value: chunked
+  body:
+    type: json
+    content: |-
+      {
+        "code": -11252,
+        "message": "Request has an invalid signature"
+      }
+order: 2270446024269140
+name: Balances-Invalid-Signature

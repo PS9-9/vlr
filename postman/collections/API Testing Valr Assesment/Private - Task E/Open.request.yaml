@@ -1,0 +1,9 @@
+$kind: http-request
+name: Open
+url: "{{baseUrl}}{{open}}"
+method: GET
+headers:
+  X-VALR-TIMESTAMP: ""
+  X-VALR-API-KEY: ""
+  X-VALR-SIGNATURE: ""
+order: 2606183135664441

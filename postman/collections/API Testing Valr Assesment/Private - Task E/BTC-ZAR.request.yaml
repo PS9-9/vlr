@@ -1,5 +1,5 @@
 $kind: http-request
 name: BTC/ZAR
-url: ""
+url: "{{baseUrl}}{{btczar}}"
 method: GET
 order: 3916172954332436

@@ -26,3 +26,5 @@ values:
     value: ''
   - key: public
     value: ''
+  - key: apiKey
+    value: ''

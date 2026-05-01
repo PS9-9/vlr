@@ -1,0 +1,9 @@
+$kind: http-request
+name: Markets
+url: "{{baseUrl}}{{market}}"
+method: GET
+headers:
+  X-VALR-API-KEY: ""
+  X-VALR-SIGNATURE: ""
+  X-VALR-TIMESTAMP: ""
+order: 348959516771264
