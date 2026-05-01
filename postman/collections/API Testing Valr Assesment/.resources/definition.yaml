@@ -1,2 +1,3 @@
 $kind: collection
 name: API Testing Valr Assesment
+description: This collection focuses on validating core market data resources such as currencies, trading pairs, trades, order books, and market summaries, while also checking authentication boundaries on protected endpoints. The tests are designed to verify response accuracy, schema compliance, error handling, pagination behavior, and basic performance expectations.

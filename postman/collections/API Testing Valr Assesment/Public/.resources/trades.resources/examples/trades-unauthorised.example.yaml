@@ -1,13 +1,13 @@
 $kind: http-example
 request:
-  url: "{{baseUrl}}/{{marketsummary}}"
+  url: "{{baseUrl}}/{{trades}}"
   method: GET
 response:
   statusCode: 401
   statusText: Unauthorized
   headers:
     - key: date
-      value: Fri, 01 May 2026 14:15:09 GMT
+      value: Fri, 01 May 2026 13:53:46 GMT
     - key: access-control-allow-origin
       value: https://www.valr.com
     - key: access-control-request-method
@@ -41,10 +41,11 @@ response:
     - key: via
       value: 1.1 google
     - key: alt-svc
-      value: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      value: h3=":443"; ma=2592000
     - key: transfer-encoding
       value: chunked
   body:
     type: html
     content: '{"code":-93,"message":"Unauthorized"}'
-order: 2303985362177251
+order: 1777643638918
+name: trades-unauthorised

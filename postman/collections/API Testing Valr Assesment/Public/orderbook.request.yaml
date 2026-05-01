@@ -1,5 +1,5 @@
 $kind: http-request
-url: "{{baseUrl}}/{{orderbook}}"
+url: "{{baseUrl}}{{public}}{{btczar}}/{{orderbook}}"
 method: GET
 examples: .resources/orderbook.resources/examples
 order: 4489495440430510

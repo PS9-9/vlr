@@ -1,5 +1,6 @@
 $kind: http-request
-url: "{{baseUrl}}{{marketsummary}}"
+name: marketsummary
+url: "{{baseUrl}}{{public}}{{marketsummary}}"
 method: GET
 examples: .resources/marketsummary.resources/examples
 order: 4495612751117550
