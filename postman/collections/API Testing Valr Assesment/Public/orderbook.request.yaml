@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{baseUrl}}/{{orderbook}}"
+method: GET
+examples: .resources/orderbook.resources/examples
+order: 4489495440430510

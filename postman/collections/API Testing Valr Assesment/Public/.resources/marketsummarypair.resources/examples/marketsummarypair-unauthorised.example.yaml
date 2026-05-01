@@ -1,0 +1,51 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/{{btczar}}/{{marketsummary}}"
+  method: GET
+response:
+  statusCode: 401
+  statusText: Unauthorized
+  headers:
+    - key: date
+      value: Fri, 01 May 2026 13:52:14 GMT
+    - key: access-control-allow-origin
+      value: https://www.valr.com
+    - key: access-control-request-method
+      value: GET,POST
+    - key: access-control-allow-headers
+      value: Content-Type,Authorization,X-Requested-With,Content-Length,Accept,Origin
+    - key: access-control-allow-credentials
+      value: "true"
+    - key: access-control-max-age
+      value: "7200"
+    - key: set-cookie
+      value: valr-session=; Max-Age=0
+    - key: set-cookie
+      value: valr-session-data=; Max-Age=0
+    - key: x-xss-protection
+      value: 1; mode=block
+    - key: x-content-type-options
+      value: nosniff
+    - key: x-frame-options
+      value: Deny
+    - key: content-security-policy
+      value: default-src 'none'
+    - key: content-type
+      value: text/html;charset=utf-8
+    - key: x-valr-upstream-service-time
+      value: "0"
+    - key: strict-transport-security
+      value: max-age=15552000; includeSubDomains; preload
+    - key: server
+      value: n/a
+    - key: via
+      value: 1.1 google
+    - key: alt-svc
+      value: h3=":443"; ma=2592000
+    - key: transfer-encoding
+      value: chunked
+  body:
+    type: html
+    content: '{"code":-93,"message":"Unauthorized"}'
+order: 2000568438980653
+name: marketsummarypair-unauthorised

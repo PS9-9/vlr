@@ -1,0 +1,6 @@
+$kind: http-request
+name: currencies
+url: "{{baseUrl}}{{public}}{{currencies}}"
+method: GET
+examples: .resources/currencies.resources/examples
+order: 1777641394255

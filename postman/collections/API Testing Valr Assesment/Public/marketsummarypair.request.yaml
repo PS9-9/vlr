@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{baseUrl}}/{{btczar}}/{{marketsummary}}"
+method: GET
+examples: .resources/marketsummarypair.resources/examples
+order: 4378377601567368

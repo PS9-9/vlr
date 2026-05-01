@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{baseUrl}}{{public}}{{pairs}}"
+method: GET
+examples: .resources/pairs.resources/examples
+order: 4029925394425997

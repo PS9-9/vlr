@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{baseUrl}}{{marketsummary}}"
+method: GET
+examples: .resources/marketsummary.resources/examples
+order: 4495612751117550

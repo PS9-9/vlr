@@ -1,0 +1,28 @@
+name: valr-main
+values:
+  - key: currencies
+    value: ''
+  - key: pairs
+    value: ''
+  - key: marketsummarypair
+    value: ''
+  - key: orderbook
+    value: ''
+  - key: trades
+    value: ''
+  - key: marketsummary
+    value: ''
+  - key: baseUrl
+    value: ''
+  - key: balances
+    value: ''
+  - key: market
+    value: ''
+  - key: open
+    value: ''
+  - key: address-btczar
+    value: ''
+  - key: btczar
+    value: ''
+  - key: public
+    value: ''

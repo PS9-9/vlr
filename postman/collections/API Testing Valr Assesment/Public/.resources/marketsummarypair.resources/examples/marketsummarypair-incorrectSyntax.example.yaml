@@ -1,0 +1,47 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}{{marketsummarypair}}"
+  method: GET
+response:
+  statusCode: 400
+  statusText: Bad Request
+  headers:
+    - key: date
+      value: Fri, 01 May 2026 13:43:05 GMT
+    - key: cache-control
+      value: max-age=5,public
+    - key: x-xss-protection
+      value: 1; mode=block
+    - key: x-content-type-options
+      value: nosniff
+    - key: x-frame-options
+      value: Deny
+    - key: content-security-policy
+      value: default-src 'none'
+    - key: content-type
+      value: application/json
+    - key: x-valr-upstream-service-time
+      value: "0"
+    - key: strict-transport-security
+      value: max-age=15552000; includeSubDomains; preload
+    - key: content-encoding
+      value: gzip
+    - key: vary
+      value: Accept-Encoding
+    - key: server
+      value: n/a
+    - key: via
+      value: 1.1 google
+    - key: alt-svc
+      value: h3=":443"; ma=2592000
+    - key: transfer-encoding
+      value: chunked
+  body:
+    type: json
+    content: |-
+      {
+        "code": -21,
+        "message": "Unsupported Currency Pair"
+      }
+order: 1777643025081
+name: marketsummarypair-incorrectSyntax

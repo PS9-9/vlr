@@ -1,0 +1,5 @@
+$kind: http-request
+url: ""
+method: GET
+examples: .resources/trades.resources/examples
+order: 4492141758320387
